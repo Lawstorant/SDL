@@ -410,7 +410,7 @@ static bool SDL_SYS_HapticOpenFromFD(SDL_Haptic *haptic, int fd)
     // Set the data.
     haptic->hwdata->fd = fd;
     haptic->supported = EV_IsHaptic(fd);
-    haptic->naxes = 3; // Hardcoded for now, not sure if it's possible to find out.
+    haptic->naxes = 2; // Hardcoded for now, not sure if it's possible to find out.
 
     // Set the effects
     if (ioctl(fd, EVIOCGEFFECTS, &haptic->neffects) < 0) {

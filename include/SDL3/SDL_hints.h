@@ -2198,13 +2198,13 @@ extern "C" {
  * The format of the string is a comma separated list of USB VID/PID/AXES
  * triples in hexadecimal form, e.g.
  *
- * `0xAAAA/0xBBBB/0x01,0xCCCC/0xDDDD/0x03`
+ * `0xAAAA/0xBBBB/0x01,0xCCCC/0xDDDD/0x3`
  *
  * This hint supports a "wildcard" device that will set the number of haptic
  * axes on all initialized haptic devices which were not defined explicitly
  * in this hint.
  *
- * `0xFFFF/0xFFFF/0x01`
+ * `0xFFFF/0xFFFF/0x1`
  *
  * This hint should be set before a controller is opened.
  *
